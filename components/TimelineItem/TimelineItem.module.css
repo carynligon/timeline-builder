@@ -1,0 +1,44 @@
+.container {
+  background-color: #f7f6f6;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 40%;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.right::before {
+  background-color: #000;
+  content: '';
+  display: block;
+  height: 1rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  width: 1rem;
+}
+
+.left::after {
+  align-self: flex-end;
+  background-color: #000;
+  content: '';
+  display: flex;
+  height: 1rem;
+  transform: translateX(2rem);
+  width: 1rem;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.media {
+  max-width: 90%;
+}
+
+.media img {
+  width: 100%;
+}
